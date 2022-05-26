@@ -1,9 +1,9 @@
 class Api::SudokuController < ApplicationController
 	def create
 		begin
-			d = eval(params[:d])
+			d = eval(params[:data])
 		rescue
-			d = params[:d]
+			d = params[:data]
 		end
 
 		if solve_sudoku(d,0,0)
@@ -28,7 +28,7 @@ class Api::SudokuController < ApplicationController
 		start_col = col - col % 3
 		for i in 0...3
 			for j in 0...3
-				if data[i + start_row] + [j + start_col] == num
+				if data[i +  start_row][j + start_col] == num
 					return false
 				end
 			end
@@ -36,18 +36,21 @@ class Api::SudokuController < ApplicationController
 		return true
 	end
 
-	def solve_sudoku(data,row,col)
+	def solve_sudoku(data, row, col)
 		n = 9
-		if row == n - 1 && col == n
+		if row == n - 1  && col == n
 			return true
 		end
+
 		if col == n
 			row = row + 1
 			col = 0
 		end
-		if !data[row][col].blank?
-			return solve_sudoku(data,row,col+1)
+
+		if !data[row][col].blank?    # handle nil value  which is mention null in params input array
+			return solve_sudoku(data, row, col + 1)
 		end
+
 		for num in 1..n
 			if validate_sudoku(data,row,col,num)
 				data[row][col] = num

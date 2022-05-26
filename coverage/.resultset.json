@@ -1,0 +1,95 @@
+{
+  "RSpec": {
+    "coverage": {
+      "/home/lenovoo/projects/samplesudo/app/helpers/api/sudoku_helper.rb": {
+        "lines": [
+          1,
+          null
+        ]
+      },
+      "/home/lenovoo/projects/samplesudo/app/helpers/application_helper.rb": {
+        "lines": [
+          1,
+          null
+        ]
+      },
+      "/home/lenovoo/projects/samplesudo/app/controllers/api/sudoku_controller.rb": {
+        "lines": [
+          1,
+          1,
+          null,
+          3,
+          null,
+          0,
+          null,
+          null,
+          3,
+          2,
+          null,
+          1,
+          null,
+          null,
+          null,
+          1,
+          88948,
+          507395,
+          61934,
+          null,
+          null,
+          27014,
+          174721,
+          13303,
+          null,
+          null,
+          13711,
+          13711,
+          13711,
+          37154,
+          107669,
+          3780,
+          null,
+          null,
+          null,
+          9931,
+          null,
+          null,
+          1,
+          15125,
+          15125,
+          2,
+          null,
+          null,
+          15123,
+          976,
+          976,
+          null,
+          null,
+          15123,
+          5191,
+          null,
+          null,
+          9932,
+          88948,
+          9931,
+          9931,
+          102,
+          null,
+          null,
+          88846,
+          null,
+          9830,
+          null,
+          null
+        ]
+      },
+      "/home/lenovoo/projects/samplesudo/app/controllers/application_controller.rb": {
+        "lines": [
+          1,
+          1,
+          null
+        ]
+      }
+    },
+    "timestamp": 1653546352
+  }
+}
